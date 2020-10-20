@@ -43,6 +43,13 @@ programmer. You need a special programmer. But because the Digispark has a bootl
 can easaly be programmed using the Arduino IDE and the bootloader. And I don't thing I have
 to reprogram the bootloader any time soon ;-)
 
+### Schematic
+![Schematic](Docs/electronics/TheC64-Joystick-Adapter_schematic.png)
+
+### Perboard
+![Perboard Layout](Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png)
+
+<img src="Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png" alt="Perboard Layout" width="50%"/>
 
 ## Housing / Enclosure
 The housing is printed using a 3D-Printer. It depends on how the hardware is built up
