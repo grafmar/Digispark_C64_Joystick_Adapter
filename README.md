@@ -26,7 +26,7 @@ they will allways support ;-)
 ## SW Requirements
 * [Arduino IDE](https://www.arduino.cc/en/main/software)
 * Install [Digistump connection for Arduino IDE](https://digistump.com/wiki/digispark/tutorials/connecting)
-* [Adapted Digispark joystick library](https://github.com/grafmar/DigisparkJoystickC64-Library) to emulate "The C64 Joystick"o IDE in Visual Studio
+* [Adapted Digispark joystick library](https://github.com/grafmar/DigisparkJoystickC64-Library) to emulate "The C64 Joystick"
 
 ## Hardware
 The hardware consists of:
