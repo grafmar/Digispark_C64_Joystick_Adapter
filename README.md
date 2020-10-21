@@ -36,8 +36,8 @@ The hardware consists of:
 * pullup resistors (~10k)
 * buttons
 
-The Digispark board has only 5 IOs, whereas P5 is also used as reset. This depends on the
-fuses set on the ATtiny85 on the Digispark. I had to change this fuses to have all IOs
+The Digispark board has only 6 IOs, whereas P3 and P4 are used for USB and P5 is also used as reset.
+This depends on the fuses set on the ATtiny85 on the Digispark. I had to change this fuses to have all IOs
 available. The downside is, that you can't program the ATtiny85 anymore using a low-voltage
 programmer. You need a special programmer. But because the Digispark has a bootloader it
 can easaly be programmed using the Arduino IDE and the bootloader. And I don't thing I have
