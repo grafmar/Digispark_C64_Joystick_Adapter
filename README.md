@@ -25,8 +25,8 @@ they will allways support ;-)
 
 ## SW Requirements
 * [Arduino IDE](https://www.arduino.cc/en/main/software)
-* [Digispark board support](https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls): http://arduino.esp8266.com/stable/package_esp8266com_index.json
-* Adapted Digispark joystick library to emulate "The C64 Joystick"o IDE in Visual Studio
+* Install [Digistump connection for Arduino IDE](https://digistump.com/wiki/digispark/tutorials/connecting)
+* [Adapted Digispark joystick library](https://github.com/grafmar/DigisparkJoystickC64-Library) to emulate "The C64 Joystick"o IDE in Visual Studio
 
 ## Hardware
 The hardware consists of:
