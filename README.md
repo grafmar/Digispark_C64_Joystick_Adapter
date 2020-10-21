@@ -44,10 +44,10 @@ can easaly be programmed using the Arduino IDE and the bootloader. And I don't t
 to reprogram the bootloader any time soon ;-)
 
 ### Schematic
-<img src="Docs/electronics/TheC64-Joystick-Adapter_schematic.png" alt="Schematic" width="50%"/>
+<img src="Docs/electronics/TheC64-Joystick-Adapter_schematic.png" alt="Schematic" width="80%"/>
 
-### Perboard
-<img src="Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png" alt="Perboard Layout" width="80%"/>
+### Perfboard
+<img src="Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png" alt="Perfboard Layout" width="80%"/>
 
 ## Housing / Enclosure
 The housing is printed using a 3D-Printer. It depends on how the hardware is built up
