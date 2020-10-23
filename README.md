@@ -10,6 +10,10 @@ But I had an old digital joystick. And with the Digispark controller board a
 "USB"-device can be emulated. Even though it is no fully qualified "USB"-protocol,
 the device works on most machines. So I gave it a try - and it WORKED!
 
+<img src="Docs/pictures/IMG-20201022-WA0000.jpg" alt="Schematic" width="30%"/>
+<img src="Docs/pictures/IMG-20201022-WA0002.jpg" alt="Schematic" width="30%"/>
+<img src="Docs/pictures/IMG-20201022-WA0003.jpg" alt="Schematic" width="30%"/>
+
 ## Status
 The digispark controller starts the bootloader first and indicates as a
 digispark-bootloader. After the timeout of about 5 seconds it resets the USB-device
