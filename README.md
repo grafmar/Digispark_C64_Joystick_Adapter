@@ -10,6 +10,10 @@ But I had an old digital joystick. And with the Digispark controller board a
 "USB"-device can be emulated. Even though it is no fully qualified "USB"-protocol,
 the device works on most machines. So I gave it a try - and it WORKED!
 
+<img src="Docs/pictures/IMG-20201022-WA0000.jpg" alt="Schematic" width="30%"/>
+<img src="Docs/pictures/IMG-20201022-WA0002.jpg" alt="Schematic" width="30%"/>
+<img src="Docs/pictures/IMG-20201022-WA0003.jpg" alt="Schematic" width="30%"/>
+
 ## Status
 The digispark controller starts the bootloader first and indicates as a
 digispark-bootloader. After the timeout of about 5 seconds it resets the USB-device
@@ -25,8 +29,8 @@ they will allways support ;-)
 
 ## SW Requirements
 * [Arduino IDE](https://www.arduino.cc/en/main/software)
-* [Digispark board support](https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls): http://arduino.esp8266.com/stable/package_esp8266com_index.json
-* Adapted Digispark joystick library to emulate "The C64 Joystick"o IDE in Visual Studio
+* Install [Digistump connection for Arduino IDE](https://digistump.com/wiki/digispark/tutorials/connecting)
+* [Adapted Digispark joystick library](https://github.com/grafmar/DigisparkJoystickC64-Library) to emulate "The C64 Joystick"
 
 ## Hardware
 The hardware consists of:
@@ -36,18 +40,25 @@ The hardware consists of:
 * pullup resistors (~10k)
 * buttons
 
-The Digispark board has only 5 IOs, whereas P5 is also used as reset. This depends on the
-fuses set on the ATtiny85 on the Digispark. I had to change this fuses to have all IOs
+The Digispark board has only 6 IOs, whereas P3 and P4 are used for USB. P5 is also used as reset, but
+this depends on the fuses set on the ATtiny85 on the Digispark. I had to change this fuses to have all IOs
 available. The downside is, that you can't program the ATtiny85 anymore using a low-voltage
 programmer. You need a special programmer. But because the Digispark has a bootloader it
 can easaly be programmed using the Arduino IDE and the bootloader. And I don't thing I have
 to reprogram the bootloader any time soon ;-)
 
-### Schematic
-<img src="Docs/electronics/TheC64-Joystick-Adapter_schematic.png" alt="Schematic" width="50%"/>
+To connect the digital joystick to the digispark controller, I used a 8-input multiplexer. Like this
+I can scan through the 8 inputs using 3 address signals and reading the output of the multiplexer.
+So I use only 4 IOs (3 Out, 1 In). The 8 inputs are normally high using pull-up resistors. The
+joystick connects the input to GND by its common line. Like this I can read 8 input signals, wherefrom
+4 direction and 1 fire signal come from the joystick. The remaining 3 inputs are connected to tactile
+switches, to be also able to use them als extra buttons.
 
-### Perboard
-<img src="Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png" alt="Perboard Layout" width="80%"/>
+### Schematic
+<img src="Docs/electronics/TheC64-Joystick-Adapter_schematic.png" alt="Schematic" width="80%"/>
+
+### Perfboard
+<img src="Docs/electronics/TheC64-Joystick-Adapter_Perfboard.png" alt="Perfboard Layout" width="80%"/>
 
 ## Housing / Enclosure
 The housing is printed using a 3D-Printer. It depends on how the hardware is built up
